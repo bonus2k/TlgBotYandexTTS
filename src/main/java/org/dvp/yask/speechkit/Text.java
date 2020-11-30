@@ -14,19 +14,16 @@ public class Text extends Kit {
 
     private String filePath;
 
-    public Text(String filePath)
-    {
+    public Text(String filePath) {
         this.filePath = filePath;
     }
 
-    public Text setTopic(String topic)
-    {
+    public Text setTopic(String topic) {
         task.put(TOPIC, topic);
         return this;
     }
 
-    public Text setFilter(String filter)
-    {
+    public Text setFilter(String filter) {
         task.put(FILTER, filter);
         return this;
     }
@@ -41,8 +38,7 @@ public class Text extends Kit {
         StringBuilder sb = new StringBuilder();
         sb.append(URL.RECOGNIZE).append("?");
         task.forEach((k, v) -> {
-            if (sb.length() > 0)
-            {
+            if (sb.length() > 0) {
                 sb.append("&");
             }
             sb.append(k).append("=").append(v);

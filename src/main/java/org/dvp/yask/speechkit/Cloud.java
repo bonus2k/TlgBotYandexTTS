@@ -3,7 +3,6 @@ package org.dvp.yask.speechkit;
 import com.google.gson.Gson;
 import org.dvp.yask.speechkit.auth.Token;
 import org.dvp.yask.speechkit.exception.ClientException;
-
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.HashMap;
@@ -41,7 +40,6 @@ public class Cloud extends Request {
         task = new HashMap<>();
         String iamToken = getIAMToken(oAuthToken);
         setAuthHeaders(iamToken);
-
         task.put(FOLDER_ID, folderId);
     }
 
@@ -55,11 +53,13 @@ public class Cloud extends Request {
     private void setAuthHeaders(String iamToken) {
         headers.put("Authorization",
                 (new StringBuilder().append("Bearer ").append(iamToken).toString()));
+
     }
 
     public byte[] request(Task task) throws InterruptedException, IOException, URISyntaxException {
         task.addParam(this.task);
-        return send(task.getURL(), task.getParam(), headers);
+
+        return send(task.getURL(), task.getParam(), headers, task);
     }
 
 }

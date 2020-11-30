@@ -41,7 +41,10 @@ public abstract class Kit implements Task {
 
     public Kit setFormat(String format)
     {
-        task.put(RATE, !format.equals(Format.OGGOPUS) ? Rate.HIGH : null);
+//        task.put(RATE, !format.equals(Format.OGGOPUS) ? Rate.HIGH : null);
+        if (!format.equals(Format.OGGOPUS)){
+            task.put(RATE, Rate.HIGH);
+        }
         task.put(FORMAT, format);
 
         return this;
