@@ -32,7 +32,7 @@ public class Request {
         HttpRequest request;
 
 
-        if (task!=null) {
+        if (task!=null && this.task.getURL().contains("recognize")) {
             request = builder.uri(new URI(url))
                     .POST(HttpRequest.BodyPublishers.ofFile(Paths.get(task.getParam())))
                     .build();

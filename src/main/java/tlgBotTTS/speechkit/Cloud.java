@@ -34,7 +34,7 @@ public class Cloud extends Request {
 
     public Cloud(String oAuthToken, String folderId) throws ClientException, InterruptedException, IOException, URISyntaxException {
         if (folderId.length() > Limit.FOLDER_ID_LENGTH) {
-            throw new ClientException(Message.LENGTH_ERROR);
+            throw new ClientException(MessageToCloud.LENGTH_ERROR);
         }
         headers = new HashMap<>();
         task = new HashMap<>();

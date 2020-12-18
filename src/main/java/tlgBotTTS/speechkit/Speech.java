@@ -34,7 +34,7 @@ public class Speech extends Kit implements Task {
 
     public Speech(String text) throws ClientException {
         if (text.length() > Limit.SYNTHESIZE_TEXT_LENGTH) {
-            throw new ClientException(Message.LENGTH_ERROR);
+            throw new ClientException(MessageToCloud.LENGTH_ERROR);
         }
         task.put(TEXT, text);
     }

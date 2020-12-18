@@ -1,6 +1,6 @@
 package org.dvp.yask.speechkit;
 
-public class Message {
+public class MessageToCloud {
     /**
      * Ошибка длины значения параметра(ов)
      */
