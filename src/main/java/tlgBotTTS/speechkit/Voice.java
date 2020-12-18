@@ -1,11 +1,11 @@
-package org.dvp.yask.speechkit;
+package tlgBotTTS.speechkit;
 
 public class Voice extends En
 {
     public static String random()
     {
         int val = generateRandomNumber(0, 1);
-        return val == 0 ? En.ALYSS : En.NICK;
+        return val == 0 ? ALYSS : NICK;
     }
 
     private static int generateRandomNumber(int min, int max)

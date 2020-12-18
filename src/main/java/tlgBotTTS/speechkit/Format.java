@@ -1,4 +1,4 @@
-package org.dvp.yask.speechkit;
+package tlgBotTTS.speechkit;
 
 /**
  * Параметры формата аудио

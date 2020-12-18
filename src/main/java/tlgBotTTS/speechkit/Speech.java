@@ -1,6 +1,6 @@
-package org.dvp.yask.speechkit;
+package tlgBotTTS.speechkit;
 
-import org.dvp.yask.speechkit.exception.ClientException;
+import tlgBotTTS.speechkit.exception.ClientException;
 
 /**
  * Speech Формирование задачи для синтеза речи (Text-To-Speech, TTS)

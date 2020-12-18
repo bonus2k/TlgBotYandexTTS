@@ -1,4 +1,4 @@
-package org.dvp.yask.speechkit.exception;
+package tlgBotTTS.speechkit.exception;
 
 public class ClientException extends Exception {
 

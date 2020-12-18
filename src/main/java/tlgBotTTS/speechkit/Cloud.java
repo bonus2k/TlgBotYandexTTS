@@ -1,8 +1,9 @@
-package org.dvp.yask.speechkit;
+package tlgBotTTS.speechkit;
 
 import com.google.gson.Gson;
-import org.dvp.yask.speechkit.auth.Token;
-import org.dvp.yask.speechkit.exception.ClientException;
+import tlgBotTTS.speechkit.auth.Token;
+import tlgBotTTS.speechkit.exception.ClientException;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.HashMap;

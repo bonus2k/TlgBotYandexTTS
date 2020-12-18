@@ -1,4 +1,4 @@
-package org.dvp.yask.speechkit;
+package tlgBotTTS.speechkit;
 
 import java.util.HashMap;
 import java.util.Map;

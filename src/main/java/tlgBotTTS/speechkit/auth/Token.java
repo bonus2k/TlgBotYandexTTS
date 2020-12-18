@@ -1,4 +1,4 @@
-package org.dvp.yask.speechkit.auth;
+package tlgBotTTS.speechkit.auth;
 
 public class Token
 {
